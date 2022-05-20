@@ -1,4 +1,8 @@
 AuthType Basic
 AuthName "Basic authentication."
-AuthUserFile /Sample/.htpassword
+AuthUserFile /.htpasswd
 require valid-user
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
