@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Basic authentication."
-AuthUserFile /.htpassword
+AuthUserFile /Sample/.htpassword
 require valid-user
